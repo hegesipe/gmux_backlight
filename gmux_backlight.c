@@ -40,7 +40,7 @@ long int get_brightness(FILE *sysfs_fp) {
 
 	rewind(sysfs_fp);
 		
-	size_t string_length = 5;
+	size_t string_length = 6;
 	char *brightness_string = (char*)malloc(string_length);
 	if (brightness_string == NULL) {
 		return -1;
